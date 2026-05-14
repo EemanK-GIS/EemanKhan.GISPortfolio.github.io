@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Developing Interactive Leaflet Maps | Eeman Khan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#footer > section {
+				padding: 1.5rem 4rem;
+			}
+			#footer h3 {
+				margin-bottom: 0.5rem;
+			}
+			header.major > .date:before,
+			header.major > .date:after {
+				top: 100%;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="project-leaflet.html">Interactive Leaflet Maps</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/eemankhan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+													</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">JavaScript &bull; Leaflet.js &bull; GeoJSON</span>
+									<h1>Developing Interactive<br />Leaflet Maps</h1>
+									<p>Web-based interactive mapping applications built with Leaflet.js, JavaScript, and HTML/CSS to visualize and explore geospatial datasets in the browser.</p>
+								</header>
+								<div class="image main"><img src="images/aerial-city-map.jpg" alt="Aerial view of city streets and buildings" /></div>
+								<p style="font-size: 0.85rem; color: #aaa; text-align: center; margin-top: -2.5rem; margin-bottom: 2rem;">Overhead aerial view of an urban intersection in Seattle, USA. Photo by <a href="https://unsplash.com/photos/aerial-view-of-city-streets-and-buildings-cE_bS9C01Ag" style="color: #bbb;" target="_blank">Zoshua Colah on Unsplash</a>.</p>
+
+								<h2>Overview</h2>
+								<p>This project demonstrates the development of interactive web GIS applications using Leaflet.js — a lightweight, open-source JavaScript mapping library. The maps are designed to make geospatial data accessible and explorable for both technical and non-technical users, without requiring a desktop GIS environment.</p>
+								<p>The work draws on front-end GIS development experience at Agrilogic AI, where interactive Leaflet maps were built to visualize agricultural and geospatial datasets across multiple platforms.</p>
+
+								<h2>Features</h2>
+								<ul>
+									<li><strong>Layer Control:</strong> Users can toggle multiple thematic layers on and off, including vector overlays, raster tiles, and GeoJSON feature sets, using Leaflet's built-in layer control panel.</li>
+									<li><strong>Custom Popups and Tooltips:</strong> Clicking on map features triggers popups displaying attribute data, historial data charts, and location information, all formatted for readability with HTML/CSS templates bound directly to GeoJSON properties.</li>
+									<li><strong>Basemap Switching:</strong> OpenStreetMap, simple topographic maps, or satellite imagery, all to allow the user to focus on relevant data</li>
+									<li><strong>Responsive Layout:</strong> The map interface is built with responsive HTML/CSS so it renders correctly across desktop and mobile screen sizes.</li>
+								</ul>
+
+								<h2>Technologies Used</h2>
+								<ul>
+									<li><strong>JavaScript:</strong> Leaflet.js, and JS for data handling</li>
+									<li><strong>HTML/CSS:</strong> Responsive page layout, custom popup styling</li>
+									<li><strong>Data:</strong> AI Model outputs, and open-source historical crop yield data</li>
+									<li><strong>Python (preprocessing):</strong> Converting large csv files to a GeoJSON, and GeoPandas, GDAL for additional analysis</li>
+								</ul>
+
+								<h2>Key Outcomes</h2>
+								<p>The resulting applications allow non-GIS users to interact with spatial datasets directly in a browser, no software installation required. The GeoJSON-first approach keeps the front-end lightweight and portable, while the Python preprocessing pipeline ensures source data from various formats (shapefiles, CSV with coordinates, raster extracts) can be converted for web use.</p>
+
+								<ul class="actions">
+									<li><a href="index.html" class="button primary">Back to Projects</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h3>Get In Touch</h3>
+							<p>Interested in working together or have a question? Connect with me on LinkedIn.</p>
+							<ul class="actions">
+								<li><a href="https://www.linkedin.com/in/eemankhan/" class="button">LinkedIn</a></li>
+							</ul>
+						</section>
+						<section style="display:flex; align-items:center; justify-content:center;">
+							<img src="images/globe-countries.gif" alt="Spinning globe" style="width:128px; height:128px; border-radius:50%;" />
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Eeman Khan</li><li>GEOSPATIAL DEVELOPER</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

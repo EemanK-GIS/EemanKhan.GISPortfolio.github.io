@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Renewable Energy Site Suitability Analysis | Eeman Khan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			header.major > .date:before,
+			header.major > .date:after {
+				top: 100%;
+			}
+			#footer > section {
+				padding: 1.5rem 4rem;
+			}
+			#footer h3 {
+				margin-bottom: 0.5rem;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="project-suitability.html">Site Suitability Analysis</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/eemankhan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+													</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Multi-Criteria Analysis &bull; ArcGIS Pro &bull; ArcPy &bull; ArcGIS Toolbox</span>
+									<h1>Renewable Energy<br />Site Suitability Analysis</h1>
+									<p>A end-to-end spatial workflow for identifying and ranking renewable energy development sites — from raw data collection through to polished visualisations and analyst-ready outputs.</p>
+								</header>
+								<div class="image main"><img src="images/solar-farm-aerial.jpg" alt="Aerial view of a solar farm" /></div>
+								<p style="font-size: 0.85rem; color: #aaa; text-align: center; margin-top: -2.5rem; margin-bottom: 2rem;">Aerial view of a solar farm in Dunhuang, China. Photo by <a href="https://unsplash.com/photos/an-aerial-view-of-a-large-solar-farm-hYfOeNvDXWg" style="color: #bbb;" target="_blank">Darmau Lee on Unsplash</a>.</p>
+
+								<h2>Overview</h2>
+								<p>Identifying viable sites for renewable energy development is a multi-layered spatial problem. Candidate areas must be evaluated against a wide range of criteria — regulatory setbacks, infrastructure proximity, terrain, land cover, and more — and those criteria shift depending on the project type (solar, wind, storage) and the regulatory environment of the region.</p>
+								<p>This project tackles that problem with a structured, repeatable workflow: assembling the right data, preparing it for analysis, running a weighted multi-criteria assessment, and delivering the results in formats that are useful to both developers and resource analysts. Applied to professional project development work at Liberty Utilities and REV Renewables.</p>
+
+								<h2>Workflow</h2>
+								<ul>
+									<li><strong>Data Collection:</strong> Source data was gathered from multiple streams: open source datasets (government land registries, environmental layers, infrastructure networks), purchased data, and consultant-supplied datasets. Each source required its own processing, and validation before it could be used in analysis.</li>
+									<li><strong>Data Preparation:</strong> Raw inputs were cleaned, reprojected to a common coordinate system, and integrated into a unified spatial dataset. Inconsistencies across sources such as: differing attribute schemas, overlapping geometries, gaps in coverage, were resolved before any analysis was run.</li>
+									<li><strong>Multi-Criteria Analysis:</strong> Sites were evaluated using a model that accounts for hard exclusion constraints (setbacks, protected areas, restricted land use) and scored criteria (proximity to transmission, slope, parcel size, land cover suitability). Constraint buffers adjust dynamically based on the selected project type and regional regulatory strictness, so the same workflow applies across different scenarios without tedious reconfiguration.</li>
+									<li><strong>Automated Processing via ArcGIS Toolbox:</strong> The analysis logic was built in Python using primarily ArcPy, some Rasterio and GeoPandas, and connected to a custom ArcGIS Toolbox, giving the wider project team a familiar interface to run the full workflow themselves. This includes inputting project type, study region, and regulatory parameters, without needing to interact with the underlying scripts.</li>
+									<li><strong>Visualisation:</strong> Results were written back to ArcGIS Pro as map layers, creating maps to show the potential of an area of interest, and to be a visual aid in decision making.</li>
+									<li><strong>Analyst Outputs:</strong> Alongside the visual deliverables, structured data exports (shapefiles, kml) were produced for resource analysts, containing attribute tables with relevant information.</li>
+								</ul>
+
+								<h2>Technologies Used</h2>
+								<ul>
+									<li><strong>ArcGIS Pro:</strong> Spatial Analyst, Symbology, Labelling, Map Series</li>
+									<li><strong>Python / ArcPy:</strong> Automated geoprocessing, dynamic parameter logic, batch data preparation</li>
+									<li><strong>ArcGIS Toolbox:</strong> User-facing interface for non-technical team members, and ease of use</li>
+									<li><strong>Data Sources:</strong> Open source, purchased, and consultant-supplied spatial datasets</li>
+								</ul>
+
+								<h2>Key Outcomes</h2>
+								<p>The workflow replaced repeated, manual steps with a consistent, repeatable process that the full team could run independently, and more quickly. Developers received clear visual outputs showing site potential, while resource analysts received structured data files ready for detailed evaluation. The dynamic project type and regulatory parameters made the tool practical across multiple regions and energy types, significantly compressing the time from initial site screening to a shortlist of viable candidates.</p>
+
+								<ul class="actions">
+									<li><a href="index.html" class="button primary">Back to Projects</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h3>Get In Touch</h3>
+							<p>Interested in working together or have a question? Connect with me on LinkedIn.</p>
+							<ul class="actions">
+								<li><a href="https://www.linkedin.com/in/eemankhan/" class="button">LinkedIn</a></li>
+							</ul>
+						</section>
+						<section style="display:flex; align-items:center; justify-content:center;">
+							<img src="images/globe-countries.gif" alt="Spinning globe" style="width:128px; height:128px; border-radius:50%;" />
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Eeman Khan</li><li>GEOSPATIAL DEVELOPER</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

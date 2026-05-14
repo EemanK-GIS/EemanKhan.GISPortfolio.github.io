@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Automating Geospatial Data Processing | Eeman Khan</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			#footer > section {
+				padding: 1.5rem 4rem;
+			}
+			#footer h3 {
+				margin-bottom: 0.5rem;
+			}
+			header.major > .date:before,
+			header.major > .date:after {
+				top: 100%;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="project-python.html">Automating Data Processing</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/eemankhan/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+													</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Python &bull; ArcPy &bull; GeoPandas &bull; GDAL</span>
+									<h1>Automating Geospatial<br />Data Processing with Python</h1>
+									<p>Python scripts and pipelines for automating repetitive geospatial data processing tasks, covering vector and raster workflows, spatial data validation, and batch transformation using ArcPy, GeoPandas, and GDAL.</p>
+								</header>
+								<div class="image main"><img src="images/code-colorful.jpg" alt="Colorful code on a screen" /></div>
+								<p style="font-size: 0.85rem; color: #aaa; text-align: center; margin-top: -2.5rem; margin-bottom: 2rem;">Close-up of colorful programming code on a laptop screen. Photo by <a href="https://unsplash.com/photos/computer-screen-displaying-colorful-code-evzHeMgbKOg" style="color: #bbb;" target="_blank">Vishnu Kalanad on Unsplash</a>.</p>
+
+								<h2>Overview</h2>
+								<p>Manual GIS workflows such as reprojecting datasets, clipping to study areas, reclassifying rasters, joining attribute tables, are time-consuming and error-prone when repeated across dozens of files or run on a schedule. This project packages those operations into reusable Python scripts that can be run from the command line, scheduled as batch jobs, or integrated into a larger data pipeline.</p>
+								<p>The automation work here draws directly from tooling built at Liberty Utilities and Agrilogic AI, where Python scripts using ArcPy and GeoPandas were developed to streamline data processing for infrastructure and interconnection analysis projects.</p>
+
+								<h2>Scripts and Workflows</h2>
+								<ul>
+									<li><strong>Batch Reprojection and Format Conversion:</strong> An ArcPy-based script that walks a directory of shapefiles or GeoJSONs, reprojects each to a target CRS, and exports to a specified output format. Handles mixed input projections and logs any files that fail conversion.</li>
+									<li><strong>Raster Processing Pipeline:</strong> A Rasterio/GDAL workflow for clipping rasters to a study area boundary, resampling to a target resolution, and applying a reclassification scheme defined in a lookup table. Supports GeoTIFF and other GDAL-readable formats.</li>
+									<li><strong>Spatial Data Validation:</strong> A GeoPandas script that checks incoming datasets for common issues such as null geometries, duplicate features, out-of-bounds coordinates, and missing required attributes, and produces a validation report before the data enters a processing pipeline.</li>
+									<li><strong>Attribute Join and Export:</strong> Automates joining tabular data (CSV) to spatial features by a common key field, applies field mapping rules, and exports the result as both a shapefile and a GeoJSON for web use.</li>
+									<li><strong>Replicating Paywalled Tools:</strong> Python scripts built to replicate the functionality of tools otherwise locked behind expensive software licenses, making those workflows accessible using open-source libraries at no cost.</li>
+								</ul>
+
+								<h2>Technologies Used</h2>
+								<ul>
+									<li><strong>ArcPy:</strong> Geoprocessing automation, batch toolbox execution, Exporting generated maps as PDF files</li>
+									<li><strong>GeoPandas:</strong> Vector data I/O, spatial joins, overlay operations, attribute processing</li>
+									<li><strong>GDAL / Rasterio:</strong> Raster read/write, reprojection, resampling, clipping</li>
+									<li><strong>Python standard library:</strong> <code>os</code>, <code>pathlib</code></li>
+								</ul>
+
+								<h2>Key Outcomes</h2>
+								<p>Automating these workflows eliminates manual repetition and reduces the risk of inconsistent outputs when processing large numbers of datasets. Scripts are parameterized, making them reusable across different projects and study areas without code changes. Logging and validation steps mean issues are caught early and traceable, rather than surfacing as silent errors later on. Several scripts also serve as open-source replacements for paywalled tools, lowering the barrier to running certain analysis workflows without costly software dependencies.</p>
+
+								<ul class="actions">
+									<li><a href="index.html" class="button primary">Back to Projects</a></li>
+								</ul>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h3>Get In Touch</h3>
+							<p>Interested in working together or have a question? Connect with me on LinkedIn.</p>
+							<ul class="actions">
+								<li><a href="https://www.linkedin.com/in/eemankhan/" class="button">LinkedIn</a></li>
+							</ul>
+						</section>
+						<section style="display:flex; align-items:center; justify-content:center;">
+							<img src="images/globe-countries.gif" alt="Spinning globe" style="width:128px; height:128px; border-radius:50%;" />
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>Eeman Khan</li><li>GEOSPATIAL DEVELOPER</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
